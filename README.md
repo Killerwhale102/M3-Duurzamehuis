@@ -6,4 +6,4 @@
 
 
 [Trello](https://trello.com/b/raJSLFyQ/m3-dashbord)
-[Dashboard](https://35810.hosts2.ma-cloud.nl/web/Dashboard)
+[Dashboard](https://35810.hosts2.ma-cloud.nl/Dashboard)
