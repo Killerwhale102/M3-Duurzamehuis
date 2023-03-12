@@ -1,3 +1,4 @@
+/*Stopwatch*/
 
 const startButton = document.getElementById("js--start");
 const stopButton = document.getElementById("js--stop");
@@ -41,4 +42,32 @@ resetButton.onclick = function(){
     secondsTimer.innerText = seconds
     minutesTimer.innerText = minutes
 }
+
+
+
+/*slider*/
+
+const rangeValue = document.getElementById("js--rangeValue");
+const slider = document.getElementById("js--slider");
+const body = document.getElementById("js--body");
+
+slider.value = 2;
+rangeValue.innerText = slider.value + "x";
+
+slider.oninput = function(){
+    rangeValue.innerText = slider.value + "x";
+    body.style.fontSize = slider.value + "rem";
+}
+
+let data = {
+    "text": "Anime Girl",
+    "img": "img/yes.webp",
+}
+
+const text = document.getElementById("js--text");
+text.innerText = data.text;
+
+const img = document.getElementById("js--img");
+img.setAttribute('src',data.img); 
+
 
