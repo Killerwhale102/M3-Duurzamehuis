@@ -1,4 +1,4 @@
-/*Stopwatch*/
+//Stopwatch
 
 const startButton = document.getElementById("js--start");
 const stopButton = document.getElementById("js--stop");
@@ -59,15 +59,20 @@ slider.oninput = function(){
     body.style.fontSize = slider.value + "rem";
 }
 
-let data = {
-    "text": "Anime Girl",
-    "img": "img/yes.webp",
-}
-
-const text = document.getElementById("js--text");
-text.innerText = data.text;
-
+const paragraph = document.getElementById("js--text")
 const img = document.getElementById("js--img");
-img.setAttribute('src',data.img); 
+
+//data fetch
+
+let data = fetch("../data.json").then(
+    function(data){
+        return data.json();
+    }).then(
+        function(trueData){
+            paragraph.innerHTML = trueData.text;
+            img.setAttribute('src',trueData.img); 
+        }
+    );
+
 
 
