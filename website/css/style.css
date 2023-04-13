@@ -11,6 +11,7 @@ html {
 header{
     height: 10rem;
     background: #1c4663;
+    display: flex;
 }
 
 img{
@@ -79,4 +80,20 @@ body{
     grid-row: 2/24;
     background: #03C988;
     border-radius: 3rem;
+}
+
+
+.Login{
+    padding-left: 158rem;
+    padding-top: 3rem;
+    text-decoration: none;
+    color: #00FFAB;  
+}
+
+
+.Login{
+    padding-left: 158rem;
+    padding-top: 3rem;
+    text-decoration: none;
+    color: #00FFAB;  
 }
