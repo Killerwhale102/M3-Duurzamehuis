@@ -7,7 +7,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: #BBD6B8;
+    background: #22577A;
     font-family: 'Arial';
 }
 
@@ -16,19 +16,19 @@ body {
     overflow: hidden;
     margin: auto;
     padding: 5rem;
-    background: #AEC2B6;
+    background: #1c4663;
     border-radius: 0.9rem;
 
 }
 
 h2 {
     text-align: center;
-    color: #94AF9F;
+    color: #00FFAB;
     padding: 1.25rem;
 }
 
 label {
-    color: #DBE4C6;
+    color: #00FFAB;
     font-size: 17px;
 }
 
