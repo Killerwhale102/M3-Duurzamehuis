@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Green label is een energie vriendelijke website om engerie te besparen."> 
+    <meta name="description" content="Green label is een energie vriendelijke website om engerie te besparen.">
     <title>Green Label</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/main.js" defer></script>
 </head>
 
-<body>
-    <header><img src="img/Artboard 1.png" alt="Green label logo"></header>
+<body onload="startTime()">
+
+    <header><img src="img/Artboard 1.png" alt="Green label logo">
+        <a class="LoginButton" href="login.html">Login</a>
+    </header>
     <main class="container">
         <article class="card card1"></article>
-        <article class="card card2"></article>
+        <article class="card card2">
+            <canvas id="js--chart--2"></canvas> <!--De waarde staat undefind flex fix ik weet niet waarom?-->
+        </article>
         <article class="card card3"></article>
-        <article class="card card4"></article>
+        <article class="card card4">
+            <div id="time"></div>
+        </article>
         <article class="card card5"></article>
         <article class="card card6"></article>
     </main>
+    <!--DIT IS EEN TEST!!-->
+    <a class="weatherwidget-io" href="https://forecast7.com/en/40d71n74d01/new-york/" data-label_1="Amsterdam"
+        data-label_2="WEATHER" data-theme="original">Amsterdam WEATHER</a>
+    <script>
+        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+    </script>
+    <!--DIT IS EEN TEST!!-->
 </body>
+
 </html>
