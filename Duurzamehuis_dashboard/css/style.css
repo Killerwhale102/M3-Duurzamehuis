@@ -10,9 +10,11 @@ html {
 
 header{
     height: 10rem;
+    width: 100%;
     background: #1c4663;
     display: flex;
-    gap: 158rem;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .LoginButton{
