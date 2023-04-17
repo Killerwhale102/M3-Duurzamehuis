@@ -21,6 +21,7 @@ const data = {
 const config = {
     type: 'doughnut',
     data:data,
+    
 };
 
 const chart2 = new Chart(document.getElementById("js--chart--2"), config);
