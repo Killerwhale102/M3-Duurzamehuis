@@ -8,105 +8,100 @@ html {
     font-size: 62.5%;
 }
 
+body{
+    height: 90vh;
+    font-size: 2rem;
+    background: #22577A;
+    font-family: sans-serif;
+}
+
 header{
-    height: 10rem;
-    width: 100%;
+    height: 8rem;
     background: #1c4663;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.logo{
+    height: 100%;
+    padding: 0.5rem 0 0.5rem 2rem;
+}
+
 .LoginButton{
-    padding-top: 3rem;
     text-decoration: none;
     color: #03C988;
-    width: 10rem;
-    height: 10rem;
-}
-
-
-
-img{
-    padding: 0.5rem 0 0.5rem 2rem;
-    height: 100%;
-}
-
-body{
-    font-size: 2rem;
-    background: #22577A;
-    min-height: 100vh;
-    font-family: sans-serif;
+    padding: 0 5rem 0 0;
 }
 
 .container{
+    height: 100%;
     width: 100%;
-    height: 85vh;
-    font-size: 2rem;
     display: grid;
-    grid-template-columns: repeat(48, 1fr);
-    grid-template-rows: repeat(24, 1fr);
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(28, 1fr);
+    padding: 5rem;
     gap: 2rem;
 }
 
 .card{
-    box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2);
+    box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.2);
+    border-radius: 3rem;
 }
 
 .card1{
-    grid-column: 5/15;
-    grid-row: 2/24;
-    background: #03C988;
-    border-radius: 3rem;
+   grid-column: 2 / 5;
+   grid-row: 1 / 15;
+   background: #00FFAB;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   font-size: 4rem;
 }
 
 .card2{
-    grid-column: 15/25;
-    grid-row: 2/13;
-    background: #6ce488;
-    border-radius: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card2 canvas{
-    width: 100%;
-    height: 100%;
-    padding: 1rem;
+   grid-column: 2 / 5;
+   grid-row: 15 / 29;
+   background: #03C988;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .card3{
-    grid-column: 15/25;
-    grid-row: 13/24;
-    background: #00FFAB;
-    border-radius: 3rem;
+   grid-column: 5 / 11;
+   grid-row: 1 / 15;
+   background: #6ce488;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .card4{
-    grid-column: 25/35;
-    grid-row: 2/13;
+    grid-column: 5 / 11;
+    grid-row: 15 / 29;
     background: #6ce488;
-    border-radius: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: sans-serif;
-    font-size: 4rem;
+    
 }
 
-
 .card5{
-    grid-column: 25/35;
-    grid-row: 13/24;
+    grid-column: 11 / 14;
+    grid-row: 1 / 15;
     background: #00FFAB;
-    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card6{
-    grid-column: 35/45;
-    grid-row: 2/24;
+    grid-column: 11 / 14;
+    grid-row: 15 / 29;
     background: #03C988;
-    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
