@@ -5,32 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Green label is een energie vriendelijke website om engerie te besparen.">
-    <title>Green Label</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="js/main.js" defer></script>
+    <title>Green Lable</title>
+    <link rel="stylesheet" href="css/login.css">
 </head>
 
-<body onload="startTime()">
-    <header>
-        <img class="logo" src="img/Artboard 1.png" alt="">
-        <a class="LoginButton" href="login.html">Login</a>
-    </header>
-    <main class="container">
-        <article class="card card1">
-            <div id="time"></div>
-        </article>
-        <article class="card card2"></article>
-        <article class="card card3">
-            <canvas class="chart--2" id="js--chart--2"></canvas>
-        </article>
-        <article class="card card4">
-            <canvas class="chart--3" id="js--chart--3"></canvas>
-        </article>
-        <article class="card card5"></article>
-        <article class="card card6"></article>
-    </main>
+<body>
+    <h1></h1>
+    <h2>Login Page</h2><br>
+    <div class="login">
+        <form id="login"> 
+            <label><b>User Name</b></label>
+            <input type="text" name="Uname" id="Uname" placeholder="Username">
+            <br><br>
+            <label><b>Password</b>
+            </label>
+            <input type="Password" name="Pass" id="Pass" placeholder="Password">
+            <br><br>
+            <!--<input type="button" name="log" id="log" value="Log In Here">--> <a class="loginButton" href="dashboard.html"> LOGIN</a>
+            <br><br>
+            <input type="checkbox" id="check">
+            <span>Remember me</span> <!--container voor het formuleren van inhoud, die niet inherent iets vertegenwoordigt (Damian uitleg) --> 
+            <br><br>
+        </form>
+    </div>
 </body>
 
 </html>

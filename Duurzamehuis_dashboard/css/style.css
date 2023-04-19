@@ -54,10 +54,12 @@ header{
    grid-row: 1 / 15;
    background: #00FFAB;
    display: flex;
+   flex-direction: column;
    justify-content: center;
    align-items: center;
 
    font-size: 4rem;
+   gap: 4rem;
 }
 
 .card2{
@@ -69,6 +71,10 @@ header{
    align-items: center;
 }
 
+.chart--1{
+    padding: 1.5rem;
+}
+
 .card3{
    grid-column: 5 / 11;
    grid-row: 1 / 15;
@@ -76,6 +82,10 @@ header{
    display: flex;
    justify-content: center;
    align-items: center;
+}
+
+.chart--2{
+    padding: 1.5rem;
 }
 
 .card4{
@@ -86,6 +96,10 @@ header{
     justify-content: center;
     align-items: center;
     
+}
+
+.chart--3{
+    padding: 1.5rem;
 }
 
 .card5{
