@@ -115,3 +115,30 @@ let curday = function(sp){
     document.getElementById("js--day").innerHTML = curday('-')
 
     let dt = new Date();
+
+
+    //pie
+
+    const labels4= [
+        "washmachine",
+        "keuken",
+        "badkamer",
+        "teunslang",
+    ];
+    
+    const data4 = {
+        labels: labels4,
+        datasets:[{
+            label: "water verbruik per L",
+            data: [10, 30, 40, 5],
+            backgroundColor: ["#4563C5 ", "#00B6FF", "#5098D5","#22577A"],
+        }]
+    }
+    
+    const config4 = {
+        type:"pie",
+        data: data4,
+    }
+
+    const chart4 = new Chart(document.getElementById("js--chart--4"), config4);
+
